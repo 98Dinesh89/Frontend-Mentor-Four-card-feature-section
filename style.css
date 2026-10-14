@@ -1,0 +1,235 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --ff: font-family: "Be Vietnam Pro", sans-serif;
+
+  --fs-p: 0.8rem;
+  --fs-main: 1.5rem;
+  --fs-heading: 1.55rem;
+  --fs-sheading: 1rem;
+  --fs-desc: 0.65rem;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-main: 1.4rem;
+    --fs-heading: 1.5rem;
+    --fs-p: 0.9375rem;
+    --fs-sheading: 1.2rem;
+    --fs-desc: 0.875rem;
+  }
+}
+/* 1. Use a predictable box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Improve text rendering */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--White);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 4. Make form elements inherit typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 5. Prevent oversized media from overflowing */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Allow long text to wrap */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Make headings and buttons consistent */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 80%;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+}
+
+#heading1 {
+  font-size: var(--fs-main);
+  font-weight: var(--fw-200);
+  color: var(--Grey-400);
+}
+
+#heading2 {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-600);
+  color: var(--Grey-500);
+}
+
+#para {
+  font-size: var(--fs-p);
+  font-weight: var(--fw-400);
+  color: var(--Grey-500);
+  padding-top: 0.8rem;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 15rem 15rem 15rem 15rem;
+  gap: 2rem;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  border-radius: 0.75rem;
+  box-shadow: 0px 16px 30px -10px rgba(0, 48, 99, 0.295);
+  padding-top: 0.25rem;
+  overflow: hidden;
+}
+
+.card1 {
+  background-color: var(--Cyan);
+  /* grid-area: card1; */
+}
+.card2 {
+  background-color: var(--Red);
+  /* grid-area: card2; */
+}
+.card3 {
+  background-color: var(--Orange);
+  /* grid-area: card3; */
+}
+.card4 {
+  background-color: var(--Blue);
+  /* grid-area: card4; */
+}
+
+#div {
+  height: 100%;
+  background-color: white;
+  padding: 1.5rem 2.2rem;
+}
+
+.title {
+  font-weight: var(--fw-600);
+  color: var(--Grey-500);
+  font-size: var(--fs-sheading);
+}
+
+.desc {
+  font-weight: var(--fw-200);
+  color: var(--Grey-400);
+  font-size: var(--fs-desc);
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+img {
+  justify-self: flex-end;
+}
+
+@media (min-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 19rem 19rem 19rem;
+    grid-template-rows: 13.5rem 13.5rem;
+    grid-template-areas:
+      "card1 card2 card4"
+      "card1 card3 card4";
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card1 {
+    max-height: 13.5rem;
+    margin: 7.5rem 0rem;
+  }
+  .card4 {
+    max-height: 13.5rem;
+    margin: 7.5rem 0rem;
+  }
+
+  .card1 {
+    background-color: var(--Cyan);
+    grid-area: card1;
+  }
+  .card2 {
+    background-color: var(--Red);
+    grid-area: card2;
+  }
+  .card3 {
+    background-color: var(--Orange);
+    grid-area: card3;
+  }
+  .card4 {
+    background-color: var(--Blue);
+    grid-area: card4;
+  }
+
+  .content {
+    width: 453px;
+  }
+}
