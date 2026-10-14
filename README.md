@@ -10,13 +10,13 @@ Build a responsive four-card feature section that adapts to different screen siz
 
 ### Screenshot
 
-![1791979648361](image/README-template/1791979648361.png)
+![1791980084749](image/README/1791980084749.png)
 
-![1791979678472](image/README-template/1791979678472.png)
+![1791980073327](image/README/1791980073327.png)
 
 ### Links
 
-- Live Site URL: Add your live website link here.
+- [Live Site URL](https://98dinesh89.github.io/Frontend-Mentor-Four-card-feature-section/)
 
 ## My Process
 
@@ -38,4 +38,4 @@ Build a responsive four-card feature section that adapts to different screen siz
 
 ## Author
 
-- Frontend Mentor: Add your profile link here.
+- [My Frontend-Mentor Profile](https://www.frontendmentor.io/profile/98Dinesh89)
